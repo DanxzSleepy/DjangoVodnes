@@ -5,7 +5,7 @@ app_name = 'AvoidNess'
 
 urlpatterns = [
     path('', views.Avoidness, name='avoidness', ),
-    path('AkumaVerse/', views.Akumaverse, name='akumaverse', ),
-    path('LumenCore/', views.LumenCore, name='lumencore', ),
-    path('NoctForge/', views.NoctForge, name='noctforge', )  
+    path('Akumaverse/', views.Akumaverse, name='akumaverse', ),
+    path('Lumencore/', views.LumenCore, name='lumencore', ),
+    path('Noctforge/', views.NoctForge, name='noctforge', )  
 ]
