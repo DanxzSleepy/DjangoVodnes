@@ -1,0 +1,14 @@
+# Ambientes virtuais
+venv/
+voidenv/
+.venv/
+
+# Arquivos do Python/Django
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+
+# Diretórios de desenvolvimento
+/staticfiles/
+/media/
