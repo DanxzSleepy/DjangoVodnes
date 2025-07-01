@@ -4,8 +4,9 @@ from . import views
 app_name = 'AvoidNess'
 
 urlpatterns = [
-    path('AvoidNess/', views.Avoidness, name='home', ),
+    path('home/', views.Avoidness, name='home', ),
     path('Akumaverse/', views.Akumaverse, name='akumaverse', ),
     path('Lumencore/', views.LumenCore, name='lumencore', ),
-    path('Noctforge/', views.NoctForge, name='noctforge', )  
+    path('Noctforge/', views.NoctForge, name='noctforge', ),
+    path('form/', views.form, name='form', ),
 ]

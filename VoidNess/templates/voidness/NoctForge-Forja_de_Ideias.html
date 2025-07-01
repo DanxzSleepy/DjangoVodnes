@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="CSS/NoctForge.css">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>tailwind.config = { theme: { extend: { colors: { primary: '#FF4500', secondary: '#2D1B2E' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
-    
+    <link rel="stylesheet" href="{% static 'CSS/NoctForge.css' %}">
 </head>
 
 <body class="bg-gradient-forge text-gray-200 min-h-screen custom-scrollbar">
@@ -24,8 +25,7 @@
     <header class="relative z-10 py-4 px-6 flex justify-between items-center border-b border-opacity-20 border-primary">
         <a href="#" class="text-2xl font-['Pacifico'] text-primary"></a>
         <div class="flex items-center space-x-6">
-            <a href="AvoidNess-Creative_Hub.html"
-                data-readdy="true"
+            <a href="AvoidNess-Creative_Hub.html" data-readdy="true"
                 class="flex items-center space-x-2 text-gray-300 hover:text-primary transition-colors duration-300">
                 <i class="ri-arrow-left-line"></i>
                 <span>Voltar à AvoidNess</span>
@@ -145,7 +145,7 @@
                 <!-- Projeto 3 -->
                 <div class="project-card glass-card rounded-lg overflow-hidden relative h-80 group">
                     <div class="absolute inset-0 bg-cover bg-center"
-                        style="background-image: url('https://readdy.ai/api/search-image?query=abstract%20neural%20network%20visualization%20with%20orange%20and%20purple%20nodes%2C%20AI%20system%20architecture%2C%20digital%20brain%20representation%2C%20dark%20background%20with%20glowing%20connections%2C%20futuristic%20technology%20concept&width=600&height=400&seq=3&orientation=landscape');">
+                        style="background-image: img('static 'img/complements/NeuraSynth');">
                     </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
                     <div class="absolute bottom-0 left-0 p-6 w-full">
@@ -197,8 +197,7 @@
                         class="absolute top-0 right-0 px-3 py-1 bg-primary bg-opacity-20 text-primary text-xs rounded-bl">
                         Conceitual
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-white" style="font-family: 'Orbitron', sans-serif;">Projeto
-                        Aether</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-white" style="font-family: 'Orbitron', sans-serif;"></h3>
                     <p class="text-gray-300 mb-6">Um sistema operacional experimental baseado em interfaces neurais
                         diretas. Explora novos paradigmas de interação humano-computador através de comandos baseados em
                         impulsos cerebrais e feedback sensorial.</p>
